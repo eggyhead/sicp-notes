@@ -22,6 +22,7 @@
 	- Describe the concept
 	- How is this idea useful?
 	- Explain how these abstraction barriers from the book are determined, or describe abstraction barriers in an area of code you're working on 
+<img width="698" alt="Screen Shot 2023-01-26 at 20 42 58" src="https://user-images.githubusercontent.com/28715808/215192851-373a6832-ff34-4f1f-8d72-baffc82a5995.png">
 
 - GOTCHA: Section 2.13 What is meant by data?
 	- In general, we can think of data as defined by some collection of selectors and constructors, together with specified conditions that these procedures must fulfill in order to be a valid representation
@@ -37,7 +38,12 @@
 		- eg. The ability to create pairs whose elements are pairs
 	
 	- Describe the box-and-pointer notation used in the book for representing sequences
-- What is a list? A sequence of pairs  
+	<img width="757" alt="Screen Shot 2023-01-26 at 20 34 21" src="https://user-images.githubusercontent.com/28715808/215193027-397f0aee-b266-4738-89eb-a47ad149241c.png">
+
+	
+- What is a list? A sequence of pairs 
+<img width="767" alt="Screen Shot 2023-01-26 at 20 52 10" src="https://user-images.githubusercontent.com/28715808/215192918-65b5970f-4ce8-4fa8-a115-17e189286a01.png">
+
 - What is meant by a list operation successively "`cdr-ing` down" a list? When would this be useful?
 ```
 (define (list-ref items n)
@@ -64,13 +70,14 @@
 	- in the reduction step, where we strip off the `car` of the list, we must take into account that the `car` may itself be a tree whose leaves we need to count.
 	- The base case often checks `pair?` versus `nil`
 - How does the following diagram represent conventional interfaces?
-![[Screen Shot 2023-01-26 at 21.00.45.png]]
+<img width="735" alt="Screen Shot 2023-01-26 at 21 00 45" src="https://user-images.githubusercontent.com/28715808/215193074-2c20c5e3-f93a-4fcd-8395-9c09e0dca21f.png">
+
 - What is meant by signal-flow structure? Concentrate on the “signals” that flow from one stage in the process to the next.
 - Are there any examples or concepts that stood out to you as particularly important or interesting in this section?
 
 ## Exercises
--[X] Warm up: 2.17
--[X] 2.22
+- [X] Warm up: 2.17
+- [X] 2.22
 - 2.26
 - 2.30 or 2.54
 
